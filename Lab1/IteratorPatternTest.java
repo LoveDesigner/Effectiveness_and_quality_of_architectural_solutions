@@ -9,7 +9,7 @@ public class IteratorPatternTest {
 		}
 		System.out.println("******");
 
-		// Вывод достопримечательностей для итератора по "Свой Выбор"
+		// Вывод достопримечательностей для итератора (типа осмотра) по "На своё усмотрение"
 		AttractionIterator yourChoiceIterator = attractions.iterator(TravelTypeEnum.YOUR_CHOICE);
 		while (yourChoiceIterator.hasNext()) {
 			Attraction attraction = yourChoiceIterator.next();
