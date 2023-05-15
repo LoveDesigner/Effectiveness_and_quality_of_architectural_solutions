@@ -6,13 +6,13 @@ public class Main {
             Guide guide = new Guide(mySQL);
             guide.construct();
             String get_select = mySQL.select();
-            print(select);
+            System.out.println(select);
             String get_where = mySQL.where();
-            print(where);
+            System.out.println(where);
             String get_limit = mySQL.limit();
-            print(limit);
+            System.out.println(limit);
             String get_SQL = mySQL.getSQL();
-            print(getSQL);
+            System.out.println(getSQL);
         } 
         
         else if (args[0].equals("PostgreSQL")) {
@@ -20,13 +20,13 @@ public class Main {
             Guide guide = new Guide(postgreSQL);
             guide.construct();
             String get_select = postgreSQL.select();
-            print(select);
+            System.out.println(select);
             String get_where = postgreSQL.where();
-            print(where);
+            System.out.println(where);
             String get_limit = postgreSQL.limit();
-            print(limit);
+            System.out.println(limit);
             String get_SQL = postgreSQL.getSQL();
-            print(getSQL);
+            System.out.println(getSQL);
         } 
         
         else {
